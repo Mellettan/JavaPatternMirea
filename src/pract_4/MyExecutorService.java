@@ -37,7 +37,7 @@ public class MyExecutorService {
         try {
             taskQueue.put(task);
         } catch (InterruptedException e) {
-            Thread.currentThread().interrupt();
+            e.printStackTrace();
         }
     }
     /**
@@ -55,7 +55,6 @@ public class MyExecutorService {
                     Runnable task = taskQueue.take(); // Извлекаем задачу из очереди
                     task.run(); // Выполняем задачу
                 } catch (InterruptedException e) {
-                    Thread.currentThread().interrupt();
                     break;
                 }
             }

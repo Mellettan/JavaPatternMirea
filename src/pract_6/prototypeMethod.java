@@ -32,5 +32,6 @@ public class prototypeMethod {
     public static void main(String[] args) {
         ConcretePrototype prototype = new ConcretePrototype();
         ConcretePrototype clonedPrototype = (ConcretePrototype) prototype.clone();
+        System.out.println("Cloned prototype: " + clonedPrototype);
     }
 }

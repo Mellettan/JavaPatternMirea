@@ -1,0 +1,5 @@
+program:
+  student:
+    name: Roman
+    last_name: Medvedev
+    group: IKBO-30-22

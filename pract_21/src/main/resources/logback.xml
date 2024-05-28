@@ -6,7 +6,7 @@
     </appender>
 
     <property name="LOG_FILE" value="application.log"/>
-    <property name="LOG_DIR" value="./logs/java-shop"/>
+    <property name="LOG_DIR" value="./logs/prod_mark"/>
 
     <appender name="FILE" class="ch.qos.logback.core.rolling.RollingFileAppender">
         <file>${LOG_DIR}/${LOG_FILE}</file>
